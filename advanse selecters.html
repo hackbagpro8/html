@@ -1,0 +1,44 @@
+<html>
+    <head><title>advance selectors</title>
+    <style>
+        input[type="text"]{
+            border: 3px solid aqua;
+        }
+        ul>li{
+            color: blue;
+            font-size: 30px; 
+        }
+        h1+p{color: cadetblue;
+        font-size: 30px;}
+        a:hover{
+            color: rgb(255, 0, 0);
+            font-size: 30px;
+        }
+        li:nth-child(3){color: darkcyan;
+        font-size: 23px;}
+        li::before{content:" 🧿";}
+        li::after{content: "🧿";}
+        p::first-letter{font-size: 200%;
+        color: crimson;}
+        div:not(#div1){color: goldenrod;}
+    </style>
+    </head>
+    <body>
+        Name<input type="text" > 
+    <h3>Space exploration</h3>
+    <ul>
+        <li>space mission</li>
+        <li>worm hole</li>
+        <li>black hole</li>
+        <li>white hole</li>
+        <li>mars rover</li>
+    </ul>
+    <h1>About paragraphs</h1>
+    <P>This is a special paragragh</P>
+    <p>This is a paragraph</p>
+    <a href="#">saikama saikama </a>
+    <div id="div1">this is division 1</div>
+    <div>this is division 2</div>
+    </body>
+
+        </html>
