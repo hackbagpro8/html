@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>l</title>
+</head>
+<body>
+    <h1>gemeratw </h1>
+    <button onclick="generate()">click me</button>
+    <div id="greet"></div>
+    <script>
+        function generate()
+        {
+        var i= 1
+        var text=""
+        while (i<=10)
+      {
+        text= text + i +"<br>"
+        i++
+      }
+      document.getElementById("greet").innerHTML=text
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>l</title>
+</head>
+<body>
+    <h1>greetings </h1>
+    <button onclick="wish()">click me</button>
+    <div id="greet"></div>
+    <script>
+        function wish()
+        {
+        var dt=new Date() 
+        var hr= dt.getHours()
+      if (hr <=10 )
+      {
+        document.getElementById("greet").innerHTML="good morning"
+      } 
+       else if (hr <=18 )
+      {
+        document.getElementById("greet").innerHTML="good day"
+      }
+      else 
+      {
+        document.getElementById("greet").innerHTML="good night"
+      }
+    }
+    </script>
+</body>
+</html>
