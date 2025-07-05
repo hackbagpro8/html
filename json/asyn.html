@@ -1,0 +1,22 @@
+<html>
+    <head><title>
+       async
+    </title></head>
+    <body>
+        <h1>async</h1>
+        <script>
+            document.write(1+"<br>")
+            document.write(2+"<br>")
+            async function add(a,b) {
+                let response= await a+b
+                display(response)
+            }
+            function display (some){
+              document.write(some)
+            }
+            add(6,14)
+            document.write(3+"<br>")
+            document.write(4+"<br>")
+        </script>
+    </body>
+</html>

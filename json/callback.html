@@ -1,0 +1,20 @@
+<html>
+    <head><title>
+       callback
+    </title></head>
+    <body>
+        <h1>callback</h1>
+        <div id="res"></div>
+        <script>
+             function display(value) {
+               document.getElementById("res").innerHTML="the result is "+ value
+            }
+            function add (a,b,mydisplay){
+              var c=a+b
+              mydisplay(c)
+            }
+            add(6,14,display)   
+
+        </script>
+    </body>
+</html>
