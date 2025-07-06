@@ -1,0 +1,16 @@
+<html>
+    <head><title>Check validity</title></head>
+<body>
+<h2>check validity</h2>
+<form name="myform"onsubmit="checkvalidity()">
+Name <input type="text" name="myname" ><input type="submit"></form>
+<script>
+function checkvalidity(){
+    var x=document.forms["myform"]["myname"].value
+    if (x==""){
+        alert(" please fill your name")
+    }
+}
+</script>
+</body>
+</html>
