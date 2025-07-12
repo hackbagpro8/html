@@ -1,0 +1,36 @@
+<html>
+    <head><title>area calculator</title></head>
+    <body>
+        <script>
+            var l,b,h,r,area
+            var ch=prompt("\n 1.rectangle\n 2.circle\n 3.triangle\n 4.parralelogram")
+            if (ch == "1")
+        {
+         l=Number(prompt("enter the length of the rectangle"))
+         b=Number(prompt("enter the breadth of the rectanglke"))
+         area=l*b
+         alert("the area of the rectangle is "+area)
+        }
+            if (ch == "2")
+        {
+         r=Number(prompt("enter the radius of the  circle"))
+         area=r*r*22/7
+         alert("the area of the circle is "+area)
+        }
+            if (ch == "3")
+        {
+         b=Number(prompt("enter the base of the triangle"))
+         h=Number(prompt("enter the height of the triangle"))
+         area=h*b*1/2
+         alert("the area of the triangle is "+area)
+        }
+            if (ch == "4")
+        {
+         h=Number(prompt("enter the height of the parralelogram"))
+         b=Number(prompt("enter the base of the parralelogram]"))
+         area=h*b
+         alert("the area of the parrelogram is "+area)
+        }
+        </script>
+    </body>
+</html>
