@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>palidrome</title>
+        <style>
+            body{
+                background-color: aqua;
+                text-align: center;
+            }
+            #result{
+                font-size: 35px;
+                color: coral;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="result"></div>
+        <script>
+            function palidrome(inputstr){
+                var input=inputstr.replace(/[^a-z0-9]/ig,'').toLowerCase()
+                var revinput =input.split('').reverse().join('')
+                if (input =revinput){
+                    document.getElementById("result").innerHTML = input+" is a palidrome"
+                }
+                else{
+                    document.getElementById("result").innerHTML = input+" is not a palidrome"
+                }
+                
+            }
+            palidrome("radar")
+        </script>
+    </body>
+</html>
