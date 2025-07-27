@@ -1,0 +1,45 @@
+<html>
+    <head><title>dice</title>
+        <style>
+            body{
+                background-color: aqua;
+                text-align: center;
+            }
+            #dice{
+                font-size: 300px;
+                color: darkorange;
+            }
+            #dice:hover{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>rolling a dice</h1>
+        <div id="dice" onclick="roll()"></div>
+        <script>
+         var dice_faces =   ['&#9856;','&#9857;','&#9858;','&#9859;','&#9860;','&#9861;']
+         var stopped= true;
+         var dice= document.getElementById("dice")
+         var t
+         function startstop(){
+            var r= Math.floor(Math.random()*6)
+            dice.innerHTML= dice_faces[r]
+         }
+         function roll(){
+            if (stopped){
+                stopped=false
+
+                t=setInterval(startstop, 100);
+            }
+            else {
+                clearInterval(t)
+                stopped=true
+            }
+         }
+         window.onload =function(){
+            roll()
+         }
+        </script>
+    </body>
+</html>
